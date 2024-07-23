@@ -1,3 +1,4 @@
+
 ## Smart Reader for the Blind Using Raspberry Pi 3B+
 
 This project aims to create a Smart Reader for the Blind using a Raspberry Pi 3B+. The Smart Reader captures images, processes them to extract text using Optical Character Recognition (OCR), and converts the text to speech, providing an audible output for visually impaired users.
@@ -32,6 +33,7 @@ The Smart Reader leverages the power of computer vision and text-to-speech synth
     - Use a pull-up resistor (10k ohms) between GPIO pin 6 and 3.3V to ensure a stable input state.
 4. **Speakers/Headphones**: Connect to the audio jack of the Raspberry Pi.
 
+![Reader's_Setup](https://github.com/user-attachments/assets/b8394afd-5502-4bbf-9410-37691dd80596)
 ### Code Explanation
 
 The provided code initializes the camera, sets up GPIO pins for the buttons, and defines functions to capture images, play/pause audio, process images for OCR, and convert text to speech.
@@ -41,6 +43,10 @@ The provided code initializes the camera, sets up GPIO pins for the buttons, and
 3. **Play/Pause Audio**: Toggles the audio output using a system command.
 4. **Process Image**: Enhances the captured image by converting it to grayscale, applying histogram equalization, and blurring for better OCR performance.
 5. **OCR and Text-to-Speech**: Reads the captured image, extracts text using `pytesseract`, and converts the text to speech using the Festival TTS engine.
+
+![Sample_doc](https://github.com/user-attachments/assets/a16a6b1c-ffc1-4df5-b7b6-a4f5a455b952)
+![Reader's_Result](https://github.com/user-attachments/assets/ec40fe85-b757-4081-bd01-6d3ef7acd5d4)
+
 
 ### Additional Features and Improvements
 
